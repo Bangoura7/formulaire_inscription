@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'inscription</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Colonne gauche avec image de fond -->
+        <div class="left-column">
+            <div class="logo-section">
+                <img src="images/bangs.jpg" alt="Bang's Logo" class="logo-image">
+                <h1 class="logo-text">BANG'S</h1>
+            </div>
+            <div class="photo-credit">
+                Photo par <a href="https://unsplash.com/@haliewestphoto" target="_blank">Halie West</a> sur <a href="https://unsplash.com" target="_blank">Unsplash</a>
+            </div>
+        </div>
+
+        <!-- Colonne droite avec le formulaire -->
+        <div class="right-column">
+            <div class="intro-section">
+                <p class="intro-text">
+                    Ceci n'est pas un vrai service en ligne ! Vous savez que vous avez besoin de quelque chose comme ça dans votre vie pour vous aider à réaliser vos rêves les plus profonds.
+                </p>
+                <p class="intro-text">Inscrivez-vous <em>maintenant</em> pour commencer.</p>
+                <p class="intro-text">Vous <em>savez</em> que vous en avez envie.</p>
+            </div>
+
+            <div class="form-section">
+                <h2>Allons-y !</h2>
+                <form id="signup-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="first-name">PRÉNOM</label>
+                            <input type="text" id="first-name" name="first-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name">NOM</label>
+                            <input type="text" id="last-name" name="last-name" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">TÉLÉPHONE</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="password">MOT DE PASSE</label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="confirm-password">CONFIRMER LE MOT DE PASSE</label>
+                            <input type="password" id="confirm-password" name="confirm-password" required>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="button-section">
+                <button type="submit" form="signup-form" class="create-account-btn">Créer un compte</button>
+                <p class="login-text">Vous avez déjà un compte ? <a href="#">Se connecter</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
